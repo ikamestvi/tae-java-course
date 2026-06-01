@@ -1,13 +1,6 @@
 package homework5;
 
 public class NumberClassifier {
-    /*
-    დაწერე ორი overloaded მეთოდი:
-    String classify(double n) — იგივე + ცალკე check:
-    if ფრაქციული ნაწილია 0 → „Whole double", სხვა შემთხვევაში „Decimal"
-
-     */
-
     public static String classify(int n) {
         if(n>0){
             return "Positive";
