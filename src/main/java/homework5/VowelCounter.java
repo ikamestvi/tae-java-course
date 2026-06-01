@@ -1,15 +1,6 @@
 package homework5;
 
 public class VowelCounter {
-    /*
-    დაწერე მეთოდი
-int countVowels(String s), რომელიც გადადის ციკლით სტრიქონის ყოველ ასოზე და
-switch-ით ამოწმებს ხმოვანია თუ არა (a, e, i, o, u). გადააქცი ასო lowercase-ში (
-main()-ში გადაეცი თქვენი სრული სახელი.
-მაგ.countVowels("Hello World") → 3 (e, o, o)
-     */
-
-
     public static int countVowels(String s) {
         int vowelCount=0;
 
