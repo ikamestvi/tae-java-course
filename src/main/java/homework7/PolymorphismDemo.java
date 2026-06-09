@@ -2,6 +2,7 @@ package homework7;
 
 public class PolymorphismDemo {
     public static void main(String[] args) {
+        //დავალება 3
          Animal[] animals={
                  new Dog("jeka"),
                  new Dog("dzagluka"),
@@ -22,5 +23,29 @@ public class PolymorphismDemo {
              animal.makeSound();
              animal.sleep();
          }
+
+
+         //output-ში დავალებების მარტივად წასაკითხად
+        System.out.println();
+
+         //დავალება 4
+        Drawable[] drawables= {
+                 new Square(),
+                new Triangle(),
+                new Star()
+        };
+
+
+         for(Drawable drawable : drawables){
+             if(drawable instanceof Square){
+                 drawable.draw();
+             } else if (drawable instanceof Triangle) {
+                 drawable.draw();
+             } else if (drawable instanceof Star) {
+                 drawable.draw();
+             }
+         }
+
+
     }
 }
