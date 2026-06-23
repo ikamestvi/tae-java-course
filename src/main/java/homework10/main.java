@@ -1,6 +1,7 @@
 package homework10;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -87,5 +88,18 @@ public class main {
         Method method2 = authorName.getMethod("printStatus");
         AuthorAnnotation auth2= method2.getAnnotation(AuthorAnnotation.class);
         System.out.println("მეთოდი: " + method2.getName() + " -> ავტორი: " + auth2.name());
+
+
+
+
+        //8 დავალება - WordCounterStream
+        System.out.println();
+        String text = "java git java oop java git python";
+        String[] wordSplit = text.split(" ");
+
+        Map<String, Long> counts = Arrays.stream(wordSplit)
+                .collect(Collectors.groupingBy(w -> w, Collectors.counting()));
+
+        System.out.println(counts);
     }
 }
